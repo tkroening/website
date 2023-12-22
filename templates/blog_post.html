@@ -1,0 +1,14 @@
+{% set currentPage = "Blog"  %}
+{% set basePath = "../"  %}
+{% extends "base.html" %}
+
+{% block additionalStyles %}
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/blog_post_style.css">
+{% endblock %}
+
+{% block pageContent %}
+<h1 class="blog-post-title">{{ post['title'] }}</h1>
+<p class="blog-post-date">{{ post['date'].strftime("%b %-d, %Y") }}</p>
+{{ content }}
+{% endblock %}

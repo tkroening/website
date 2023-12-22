@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo Kroening</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <script>
+        function showNavbarLinks() {
+            let elem = document.getElementById('navbar');
+
+            if (elem.className == 'navbar') {
+                elem.className += " responsive";
+            } else {
+                elem.className = "navbar";
+            }
+        }
+    </script>
+
+    {% block additionalStyles %}
+    {% endblock %}
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="body-container">
+        {% block pageContent %}
+            Default content
+        {% endblock %}
+    </div>
+    <footer>
+        &copy; Copyright Theo Kroening 2023&mdash;. All rights reserved.
+    </footer>
+</body>
+</html>

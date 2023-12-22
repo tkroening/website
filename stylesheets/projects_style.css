@@ -1,0 +1,45 @@
+.cards {
+    display: flex;
+    gap: 30px 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 380px;
+    border: solid 1px black;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.card .card-photo {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-title {
+    color: var(--213-red);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.card-title:hover {
+    text-decoration: underline;
+}
+
+.card .card-body {
+    padding: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .card-title {
+        color: var(--tomato-red);
+        font-weight: bold;
+    }
+
+    .card {
+        border: solid 1px rgba(245, 245, 245, 0.4);
+    }
+}

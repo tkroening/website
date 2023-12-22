@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo Kroening</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <script>
+        function showNavbarLinks() {
+            let elem = document.getElementById('navbar');
+
+            if (elem.className == 'navbar') {
+                elem.className += " responsive";
+            } else {
+                elem.className = "navbar";
+            }
+        }
+    </script>
+
+    
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <style>
+        .textImg {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .textImg img {
+            width: 80%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="navbar" id="navbar">
+    <a class="navbar-logo" href="../index.html">Theo Kroening</a>
+    <ul class="navbar-links">
+        <a href="../index.html" class="navbar-link ">About</a>
+        <a href="../projects.html" class="navbar-link  navbar-link-active ">Projects</a>
+        <a href="../blog.html" class="navbar-link ">Blog</a>
+        <a href="../resume.pdf" class="navbar-link">Resume</a>
+    </ul>
+    <a class="navbar-burger" onclick="showNavbarLinks();">
+        Menu
+    </a>
+</div>
+<hr class="navbar-divider">
+
+    <div class="body-container">
+        
+<h1 class="page-title">Wean 9</h1>
+<div class="textImg">
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NB1P-pAEGK4?si=rWqB_QE0v5kNt9Cp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<i>Wean 9</i> was my final Term Project for CMU's <a href="https://cs.cmu.edu/~112">15-112 course</a>. It is a 112-themed dungeon crawler set in Wean Hall, implemented in Python with <code>cmu_112_graphics</code>. The project won the course's Term Project Showcase twice by popular vote.
+
+<h2>Features</h2>
+<ul>
+    <li>Nine levels, one for each of the nine floors of Wean Hall! Each level generates a random maze around a fixed central floorplan using one of DFS, Prim's Algorithm, Kruskal's Algorithm, or Hunt and Kill.</li>
+    <li>Battle pathfinding enemies (grad students) on each floor.</li>
+    <li>Stop by the vending machines on Wean 2!</li>
+    <li>Three challenging bosses, each with multiple phases.</li>
+    <li>Inventory system.</i>
+    <li>Saving and loading.</i>
+</ul>
+
+
+    </div>
+    <footer>
+        &copy; Copyright Theo Kroening 2023&mdash;. All rights reserved.
+    </footer>
+</body>
+</html>

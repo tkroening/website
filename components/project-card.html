@@ -1,0 +1,9 @@
+{% macro projectCard(projectPath, photoPath, cardTitle, cardText) %}
+<div class="card">
+    <img class="card-photo" src="{{ photoPath  }}" alt="Photo for {{ cardTitle }}">
+    <div class="card-body">
+        <a href="{{ projectPath }}"class="card-title">{{ cardTitle  }}</a>
+        <p class="card-text">{{ cardText  }}</p>
+    </div>
+</div>
+{% endmacro %}

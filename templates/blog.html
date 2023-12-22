@@ -1,0 +1,11 @@
+{% set currentPage = "Blog"  %}
+{% extends "base.html" %}
+{% block pageContent %}
+<h1 class="page-title">Blog</h1>
+{% for post in posts %}
+<div>
+    <p class="blog-post-date"> {{ post['date'].strftime("%b %-d, %Y")  }}  </p>
+    <a class="blog-post-title" href="{{ post.fileName  }}"> {{ post['title']  }}  </a>
+</div>
+{% endfor %}
+{% endblock %}
