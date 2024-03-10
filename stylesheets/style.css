@@ -104,6 +104,8 @@ a {
     .navbar-burger {
         float: right;
         display: block;
+        top: 50%;
+        transform: translateY(20%);
     }
 
     /* Adapted from W3Schools */
