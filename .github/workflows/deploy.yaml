@@ -28,5 +28,5 @@ jobs:
         script: |
           cd /var/www/website/
           git stash
-          git pull --force origin master
+          git pull --force origin main
 
