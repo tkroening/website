@@ -67,12 +67,6 @@ body {
     display: none;
 }
 
-.profile-photo {
-    width: 300px;
-    height: 300px;
-    float: left;
-    margin-right: 50px;
-}
 
 footer {
     margin-top: 50px;
@@ -123,11 +117,6 @@ a {
 
     .navbar.responsive .navbar-link {
         display: block;
-    }
-
-    .profile-photo {
-        display: block;
-        float: none;
     }
 }
 
