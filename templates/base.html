@@ -12,18 +12,6 @@
 
     <link rel="stylesheet" href="stylesheets/style.css">
 
-    <script>
-        function showNavbarLinks() {
-            let elem = document.getElementById('navbar');
-
-            if (elem.className == 'navbar') {
-                elem.className += " responsive";
-            } else {
-                elem.className = "navbar";
-            }
-        }
-    </script>
-
     {% block additionalStyles %}
     {% endblock %}
 </head>

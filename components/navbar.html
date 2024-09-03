@@ -1,14 +1,11 @@
 <div class="navbar" id="navbar">
-    <a class="navbar-logo" href="{% if basePath is not none %}{{ basePath  }}{% endif %}index.html">Theo Kroening</a>
+    <a class="navbar-logo" href="/">Theo Kroening</a>
     <ul class="navbar-links">
-        <a href="{% if basePath is not none %}{{ basePath  }}{% endif %}index.html" class="navbar-link {% if currentPage == "About" %}navbar-link-active{% endif %}">About</a>
-        <a href="{% if basePath is not none %}{{ basePath  }}{% endif %}projects.html" class="navbar-link {% if currentPage == "Projects" %} navbar-link-active {% endif %}">Projects</a>
-        <a href="{% if basePath is not none %}{{ basePath  }}{% endif %}blog.html" class="navbar-link {% if currentPage == "Blog" %} navbar-link-active {% endif %}">Blog</a>
-        <a href="{% if basePath is not none %}{{ basePath  }}{% endif %}resume.pdf" class="navbar-link">Resume</a>
+        {% include 'navbar-links.html' %}
     </ul>
-    <a class="navbar-burger" onclick="showNavbarLinks();">
-        Menu
-    </a>
+</div>
+<div class="mobile-menu">
+    {% include 'navbar-links.html' %}
 </div>
 <hr class="navbar-divider">
 

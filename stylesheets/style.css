@@ -63,10 +63,9 @@ body {
     color: var(--213-red);
 }
 
-.navbar-burger {
+.mobile-menu {
     display: none;
 }
-
 
 footer {
     margin-top: 50px;
@@ -85,38 +84,15 @@ a {
     }
 
     .navbar {
-        display: block;
         width: 100%;
-        height: auto;
-    }
-
-    .navbar-logo {
-        float: none;
     }
 
     .navbar ul {display: none;}
-    .navbar-burger {
-        float: right;
-        display: block;
-        top: 50%;
-        transform: translateY(20%);
-    }
 
-    /* Adapted from W3Schools */
-    .navbar.responsive {position: relative;}
-    .navbar.responsive a.navbar-burger {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .navbar.responsive ul.navbar-links {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .navbar.responsive .navbar-link {
-        display: block;
+    .mobile-menu {
+        margin-top: 0.5em;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 
