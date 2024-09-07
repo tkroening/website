@@ -3,6 +3,7 @@
 
 # Other junk
 *.swp
+.vscode
 
 # Ignore Output Folder
 /output
