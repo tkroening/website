@@ -1,4 +1,3 @@
-{% set basePath = "../"  %}
 {% set currentPage = "Projects"  %}
 {% extends "base.html" %}
 
@@ -21,7 +20,7 @@
 {% block pageContent %}
 <h1 class="page-title">Dragonfly</h1>
 <div class="textImg">
-    <img src="{{ basePath }}images/dragonfly_photo.png">
+    <img src="/assets/images/dragonfly_photo.png">
 </div>
 
 <i>Dragonfly</i> was my final project for my A-Level Computer Science course. The goal was to create an online tool that bundled together exam questions with their rubrics to speed up the revision process. As part of the development process, I interviewed both students and teachers to find out what some useful features might be:
@@ -34,12 +33,12 @@
 
 So, the meat of this project was implementing <i>question builder</i> and <i>question viewer</i> interfaces:
 <div class="textImg">
-    <img src="{{ basePath }}images/dragonfly_builder.png">
+    <img src="/assets/images/dragonfly_builder.png">
 </div>
 
 Both are two-panel interfaces that allow the questions and their rubrics to be viewed and developed in parallel. The <i>builder</i> allows users to dynamically insert and remove multiple-part questions, supporting both text-based and multiple choice answers. The final <i>question set</i> is then converted into an internal representation and stored in an SQL database. Any inserted images are saved to an Amazon S3 bucket. Logged-in users can then pull up any of the question sets they have made from the <i>Sets</i> screen:
 <div class="textImg">
-    <img src="{{ basePath }}images/dragonfly_sets.png">
+    <img src="/assets/images/dragonfly_sets.png">
 </div>
 
 Both interfaces use a custom rendering engine under the hood, implemented entirely with vanilla Javascript. The backend is a Python Flask server.
@@ -47,17 +46,17 @@ Both interfaces use a custom rendering engine under the hood, implemented entire
 <h2>LMS Features</h2>
 Towards the end of the project, I added several LMS features to better address teachers' needs. Teachers can invite students to <i>classes</i>, assign question sets to them, and then collect and grade the responses. Individual feedback can be provided and viewed from the <i>Task</i> view:
 <div class="textImg">
-    <img src="{{ basePath }}images/dragonfly_task.png">
+    <img src="/assets/images/dragonfly_task.png">
 </div>
 
 Our two-panel interface makes a return in the form of a <i>Question Marker</i>, that allows easy grading of student submissions:
 <div class="textImg">
-    <img src="{{ basePath }}images/dragonfly_marker.png">
+    <img src="/assets/images/dragonfly_marker.png">
 </div>
 
 and a question feedback viewer for students:
 <div class="textImg">
-    <img src="{{ basePath }}images/dragonfly_feedback.png">
+    <img src="/assets/images/dragonfly_feedback.png">
 </div>
 
 You can try the live demo of the project at <a href="https://dragonfly.kroening.dev">dragonfly.kroening.dev</a>.

@@ -1,1 +1,0 @@
-{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QI'm <b>Theo Kroening</b>, a junior studying Computer Science at Carnegie Mellon University, Pittsburgh, and I'm pursuing a systems concentration.</p> <p>A processor with four-byte granularity can slurp up four bytes from an aligned address with one read.\\E$"}

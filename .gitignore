@@ -4,14 +4,8 @@
 # Other junk
 *.swp
 
-# Ignore *generated* HTML files. These are produced by build.py
-# To edit/create a page, edit the template/source
+# Ignore Output Folder
+/output
 
-/*.html
-
-# The source files are under /projects/src
-/projects/*.html
-
-# The source files are .mds
-/posts/*.html
-
+# Python
+__pycache__
