@@ -7,13 +7,13 @@
 .cards {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr));
     gap: 30px 20px;
     justify-items: center;
 }
 
 .card {
-    width: 380px;
+    width: min(100%, 380px);
     border: solid 1px black;
     border-radius: 2px;
     padding: 8px;
