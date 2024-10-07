@@ -1,0 +1,238 @@
+pre {
+    line-height: 125%;
+}
+
+td.linenos .normal {
+    color: inherit;
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+span.linenos {
+    color: inherit;
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+td.linenos .special {
+    color: #000000;
+    background-color: #ffffc0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+span.linenos.special {
+    color: #000000;
+    background-color: #ffffc0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.codehilite .hll {
+    background-color: #ffffcc
+}
+
+/*
+    Light-Mode colors were taken from the "macOS Modern Light - Xcode Default"
+    theme.
+*/
+
+/* Comments */
+.codehilite .c,
+.codehilite .ch,
+.codehilite .cm,
+.codehilite .cp,
+.codehilite .c1,
+.codehilite .cs {
+    color: #008E00;
+    /* Comment color */
+    font-style: italic;
+}
+
+/* Errors */
+.codehilite .err {
+    border: 1px solid #cd3131;
+    /* Error color */
+}
+
+/* Keywords */
+.codehilite .k,
+.codehilite .kc,
+.codehilite .kd,
+.codehilite .kn,
+.codehilite .kp,
+.codehilite .kr,
+.codehilite .kt {
+    color: #C800A4;
+    /* Keyword color */
+    font-weight: bold;
+}
+
+/* Operators */
+.codehilite .o,
+.codehilite .ow {
+    color: #AA22FF;
+    /* Operator color */
+    font-weight: bold;
+}
+
+/* Numbers */
+.codehilite .m,
+.codehilite .mb,
+.codehilite .mf,
+.codehilite .mh,
+.codehilite .mi,
+.codehilite .mo {
+    color: #3A00DC;
+    /* Number color */
+}
+
+/* Strings */
+.codehilite .s,
+.codehilite .sa,
+.codehilite .sb,
+.codehilite .sc,
+.codehilite .sd,
+.codehilite .s2,
+.codehilite .se,
+.codehilite .sh,
+.codehilite .si,
+.codehilite .sr,
+.codehilite .s1,
+.codehilite .ss,
+.codehilite .sx {
+    color: #DF0002;
+    /* String color */
+}
+
+/* Built-in constants */
+.codehilite .no,
+.codehilite .nb {
+    color: #C800A4;
+    /* Keyword color (used for built-in constants) */
+}
+
+/* User-defined constants */
+.codehilite .nc,
+.codehilite .nd,
+.codehilite .ni,
+.codehilite .ne,
+.codehilite .nf,
+.codehilite .nl,
+.codehilite .nn,
+.codehilite .nt,
+.codehilite .nv,
+.codehilite .fm,
+.codehilite .vc,
+.codehilite .vg,
+.codehilite .vi,
+.codehilite .vm,
+.codehilite .il {
+    color: #275A5E;
+    /* User-defined constant color */
+}
+
+/* Variables */
+.codehilite .nv,
+.codehilite .vc,
+.codehilite .vg,
+.codehilite .vi,
+.codehilite .vm {
+    color: #C800A4;
+    /* Keyword color (used for variables) */
+}
+
+/* Storage class */
+.codehilite .st {
+    color: #C900A4;
+    /* Storage class color */
+}
+
+/* Class names */
+.codehilite .nc {
+    color: #438288;
+    /* Class name color */
+}
+
+@media (prefers-color-scheme: dark) {
+    /*
+        Dark mode colors were taken from:
+        https://github.com/davidbwaters/macos-modern-vscode-theme
+    */
+
+    .codehilite .k,
+    .codehilite .kc,
+    .codehilite .kd,
+    .codehilite .kn,
+    .codehilite .kp,
+    .codehilite .kr,
+    .codehilite .kt {
+        color: #ff7ab2;
+        /* Keywords - orange */
+    }
+
+    .codehilite .c,
+    .codehilite .ch,
+    .codehilite .cm,
+    .codehilite .cp,
+    .codehilite .c1,
+    .codehilite .cs {
+        color: #7F8C98;
+        /* Comments - light gray */
+    }
+
+    .codehilite .m,
+    .codehilite .mb,
+    .codehilite .mf,
+    .codehilite .mh,
+    .codehilite .mi,
+    .codehilite .mo {
+        color: #dabaff;
+        /* Numbers - purple */
+    }
+
+    .codehilite .s,
+    .codehilite .sa,
+    .codehilite .sb,
+    .codehilite .sc,
+    .codehilite .sd,
+    .codehilite .s2,
+    .codehilite .se,
+    .codehilite .sh,
+    .codehilite .si,
+    .codehilite .sr,
+    .codehilite .s1,
+    .codehilite .ss,
+    .codehilite .sx {
+        color: #ff8170;
+        /* Strings - reddish orange */
+    }
+
+    .codehilite .nc,
+    .codehilite .nd,
+    .codehilite .ni,
+    .codehilite .ne,
+    .codehilite .nf,
+    .codehilite .nl,
+    .codehilite .nn,
+    .codehilite .nt,
+    .codehilite .nv,
+    .codehilite .fm,
+    .codehilite .vc,
+    .codehilite .vg,
+    .codehilite .vi,
+    .codehilite .vm,
+    .codehilite .il {
+        color: #b281eb;
+        /* User-defined constants - purple */
+    }
+
+    .codehilite .na,
+    .codehilite .nb,
+    .codehilite .no {
+        color: #76bfb0;
+        /* Built-in constants and attributes */
+    }
+}

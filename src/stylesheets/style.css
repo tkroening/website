@@ -101,24 +101,6 @@ a {
     font-weight: 500;
 }
 
-p.blog-post-date {
-    display: block;
-    font-weight: 300;
-    margin-bottom: 0px;
-}
-
-a.blog-post-title {
-    display: block;
-    color: var(--213-red);
-    font-size: 1.5rem;
-    margin-top: 0px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-a.blog-post-title:hover {
-    text-decoration: underline;
-}
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
@@ -145,10 +127,6 @@ a.blog-post-title:hover {
     }
 
     a {
-        color: var(--tomato-red);
-    }
-
-    a.blog-post-title {
         color: var(--tomato-red);
     }
 

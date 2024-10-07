@@ -4,14 +4,18 @@
 {% extends "base.html" %}
 
 {% block additionalStyles %}
-    <link rel="stylesheet" href="stylesheets/projects_style.css"
+    <link rel="stylesheet" href="stylesheets/projects_style.css">
 {% endblock %}
 
 {% block pageContent %}
 <h1 class="page-title">Projects</h1>
 
-<div class="cards">
-    {{ projectCard("projects/wean9.html", "/assets/images/wean9.png", "Wean 9", "112-themed dungeon crawler set in Wean Hall with all your favorite characters!")  }}
-    {{ projectCard("projects/dragonfly.html", "/assets/images/dragonfly_photo.png", "Dragonfly", "A fully-featured study tool and LMS implemented in Flask, SQLAlchemy, and Vanilla Javascript.")  }}
+<div class="cards-container">
+    <div class="cards">
+        {{ projectCard("projects/wean9.html", "/assets/images/wean9.png", "Wean 9", "112-themed dungeon crawler set in Wean Hall with all your favorite characters!")  }}
+        {{ projectCard("projects/dragonfly.html", "/assets/images/dragonfly_photo.png", "Dragonfly", "A fully-featured study tool and LMS implemented in Flask, SQLAlchemy, and Vanilla Javascript.")  }}
+        {{ projectCard("posts/FRPico!.html", "/assets/images/frpico.jpg", "FRPico!", "A physical model of the probability box from 36-218!")  }}
+        {{ projectCard("projects/compiler.html", "/assets/images/l4_grammar.png", "C0 Compiler", "A compiler for C0, a memory-safe subset of C.")  }}
+    </div>
 </div>
 {% endblock %}

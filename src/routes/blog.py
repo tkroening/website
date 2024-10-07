@@ -35,7 +35,14 @@ def renderHomePage():
             postTemplate = environment.get_template("blog_post.html")
             postContent = postTemplate.render(
                 post=post,
-                content=markdown.markdown(post.content),
+                content=markdown.markdown(
+                    post.content,
+                    extensions=[
+                        'fenced_code',
+                        'codehilite',
+                        'markdown_captions'
+                    ]
+                ),
                 year=year
             )
             newFileName = "posts/" + fileName[:-3] + ".html"

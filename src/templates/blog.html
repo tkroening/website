@@ -1,11 +1,30 @@
 {% set currentPage = "Blog"  %}
 {% extends "base.html" %}
+
+{% block additionalStyles %}
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/blog_style.css">
+{% endblock %}
+
 {% block pageContent %}
 <h1 class="page-title">Blog</h1>
 {% for post in posts %}
-<div>
-    <p class="blog-post-date"> {{ post['date'].strftime("%b %-d, %Y")  }}  </p>
-    <a class="blog-post-title" href="{{ post.fileName  }}"> {{ post['title']  }}  </a>
-</div>
+    {% if not post['coverImage'] %}
+    <div>
+        <p class="blog-post-date"> {{ post['date'].strftime("%b %-d, %Y")  }}  </p>
+        <a class="blog-post-title" href="{{ post.fileName  }}"> {{ post['title']  }}  </a>
+    </div>
+    {% else %}
+    <div class="blog-post-with-image">
+        <div class="blog-post-image">
+            <img src="{{ post.coverImage }}">
+        </div>
+        <div class="blog-post-info">
+            <p class="blog-post-date"> {{ post['date'].strftime("%b %-d, %Y")  }}  </p>
+            <a class="blog-post-title" href="{{ post.fileName  }}"> {{ post['title']  }}  </a>
+            <p class="blog-post-blurb"> {{ post['blurb'] }} </p>
+        </div>
+    </div>
+{% endif %}
 {% endfor %}
 {% endblock %}

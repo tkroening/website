@@ -1,0 +1,29 @@
+{% set currentPage = "Projects"  %}
+{% extends "base.html" %}
+
+{% block additionalStyles %}
+    <link rel="stylesheet" href="../stylesheets/style.css">
+{% endblock %}
+
+{% block pageContent %}
+<h1 class="page-title">C0 Compiler</h1>
+
+I implemented a compiler for C0 (a memory-safe subset of C) in OCaml, targeting x86-64 assembly for CMU's compiler course. The compiler supports all C0 language features, including:
+<ul>
+    <li>Branching</li>
+    <li>Functions</li>
+    <li>Structs</li>
+    <li>Arrays</li>
+    <li>Runtime Bounds Checks</li>
+    <li>Graph-based register allocation</li>
+</ul>
+
+The compiler also implements a level of optimizations, which enables the following:
+<ul>
+    <li>Single Static Assignment (SSA), which is not itself an optimization, but enables optimizations.</li>
+    <li>Constant Propagation and Constant Folding.</li>
+    <li>Dead Code Elimination.</li>
+    <li>Tail Call Optimization.</li>
+</ul>
+
+{% endblock %}
